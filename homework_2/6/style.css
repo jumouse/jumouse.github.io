@@ -1,0 +1,8 @@
+li {
+  background-color: white;
+}
+
+.hit1 + li,
+.hit4 + li {
+  background-color: red;
+}
