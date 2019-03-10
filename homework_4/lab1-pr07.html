@@ -1,0 +1,25 @@
+<HTML>
+	<HEAD>
+		<meta charset="utf-8">
+		<TITLE>Задание 7</TITLE>
+	</HEAD>
+	<BODY>
+		<p>
+			<FONT FACE="ARIAL, HELVETICA, SANS-SERIF" SIZE="3">
+Эта страничка содержит скрипт открытия нового окна. Оно откроется при 
+щелчке на эскизе и будет содержать большое изображение. Если у 
+пользователя отключена поддержка скриптов, большое изображение (или 
+страница, содержащая его) просто откроется в новом окне.
+			</FONT>
+		</p>
+		<p ALIGN="CENTER">
+			<A HREF="win.html" TARGET="pict"
+				onclick="window.open(this.href,this.target,
+						'width=579, height=338,location=no,toolbar=no,'+
+						'menubar=no,resizable=no,'+
+						'scrollbars=no,status=no');return false;">
+				<IMG SRC="1s.jpg" WIDTH="96" HEIGHT="63" ALT="Миниатюра" BORDER="0">
+			</A>
+		</p>
+	</BODY>
+</HTML>
