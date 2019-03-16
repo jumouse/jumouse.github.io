@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+	<meta charset="utf-8">
+	<TITLE>Задание 3</TITLE>
+	<SCRIPT TYPE="text/JavaScript">
+		function vremya() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			var result = "Московское время "+h+":"+m+":"+s;
+			alert(result);
+		}
+	</SCRIPT>
+</HEAD>
+<BODY>
+	<H3 onClick="vremya();">Узнать, который час</H3>
+</BODY>
+</HTML>
