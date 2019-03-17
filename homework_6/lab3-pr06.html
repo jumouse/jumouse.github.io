@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<meta charset="utf-8">
+		<title>Проверка данных в полях формы</title>
+		<script>
+			function my() {
+				var s1 = myForm.Edname.value
+				if (s1.length == 0) {
+					alert("Вы не ввели имя!");
+					document.myForm.Edname.focus()
+				}
+				else {
+					var s2 = myForm.Edphone.value
+					if (s2 == '') {
+						alert("Вы не ввели номер телефона!");
+						document.myForm.Edphone.focus()
+					}
+					else {
+						if ((s2.length<9) || ((s2.indexOf('-',0) != 3) || (s2.indexOf('-',4) != 6))) {
+							alert("Неверный формат ввода номера!");
+							document.myForm.Edphone.focus()
+						}
+						else {
+							alert("Спасибо! Данные введены корректно!");
+							}
+						}	
+					}
+				}
+		</script>
+	</head>
+	<body>
+		<h1 style='color:blue;  font-style: italic'>Проверка данных в полях формы</h1>
+		<form name ="myForm">
+			<div>
+				<label>Введите Ваше имя: <br></label>
+				<input type="text" name="Edname" id="id5">
+			</div>
+			<div>
+				<label>Введите номер телефона (ХХХ-ХХ-ХХ): <br></label>
+				<input type="text" name="Edphone" id="id6">
+			</div>
+			<p><input type="button" value="Отправить" onClick="my();"> <input type="reset" value="Очистить"></p>
+		</form>
+	</body>
+</html>

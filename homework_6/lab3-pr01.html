@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<meta charset="utf-8">
+		<title>Задание 1</title>
+		<script>
+			function my() {
+				document.f1.ch1.checked=true;
+				document.getElementById("id3").checked=true;
+				document.getElementById("id5").value='В Кабардино-Балкарии валокордин из Болгарии';
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style='color:blue;  font-style: italic'>Пример интерактивной формы</h1>
+		<form name ="f1">
+			<div>
+				<label>Введите текст: <br></label>
+				<input type="text" name="name" id="id5" style='width:100%'>
+			</div>
+			<p><input type="checkbox" name="value" id="ch1" value="отметьте!"> отметьте!</p>
+			<p>
+				<label>Выберите: <br></label>
+				<input type="radio" name="rad" value="1" id="id1"> вариант 1
+			</p>
+			<p><input type="radio" name="rad" value="2" id="id2" checked> вариант 2</p>
+			<p><input type="radio" name="rad" value="3" id="id3"> вариант 3</p>
+			<p><input type="button" value="Выполнить" onClick="my();"></p>
+			<p><input type="reset" value="Сброс"></p>
+		</form>
+	</body>
+</html>

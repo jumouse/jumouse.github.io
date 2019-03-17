@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<meta charset="utf-8">
+		<title>Тестовое задание в закрытой форме</title>
+		<script>
+			function my() {
+				if ((document.getElementById("ch2").checked) && (document.getElementById("ch5").checked)) {
+					alert('Правильно!');
+				}
+				else {
+					if ((document.getElementById("ch2").checked) || (document.getElementById("ch5").checked)) {
+						alert('Не все столицы выбраны!');
+					}
+					else {
+						alert('Неверно!');
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<p>Выберите столицы европейских государств:</p>
+		<form name ="f1">
+			<input type="checkbox" name="value1" id="ch1" value="Вашингтон"> Вашингтон <br>
+			<input type="checkbox" name="value2" id="ch2" value="Берн"> Берн <br>
+			<input type="checkbox" name="value3" id="ch3" value="Пекин"> Пекин <br>
+			<input type="checkbox" name="value4" id="ch4" value="Гаага"> Гаага <br>
+			<input type="checkbox" name="value5" id="ch5" value="Лиссабон"> Лиссабон
+			<p><input type="button" value="Проверить" onClick="my();"> <input type="reset" value="Повторить"></p>
+		</form>
+	</body>
+</html>

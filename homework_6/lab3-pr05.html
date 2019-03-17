@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<meta charset="utf-8">
+		<title>Многострочное окно редактирования и выпадающее меню</title>
+		<script>
+			function my() {
+				var n = document.getElementById("33").options.selectedIndex;
+				var val = document.getElementById("33").options[n].value;
+				window.open(val);
+			}
+		</script>
+	</head>
+	<body>
+		<form name ="f1">
+			<textarea name="text1" rows="6">Всем любителям web-программирования! Справочник по JavaScript в формате CHM доступен на сайте http://javascript.ru</textarea>
+			<p>Выберите поисковую систему для поиска дополнительных материалов:</p>
+			<select name="sel" id="33" size=1 >
+				<option value="http://www.google.ru">Google
+				<option value="http://www.ya.ru">Yandex
+				<option value="http://www.altavista.com">Altavista
+			</select>
+			<p><input type="button" value="Перейти" onClick="my();"><input type="reset" value="Сброс"></p>
+		</form>
+	</body>
+</html>

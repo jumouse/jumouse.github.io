@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+body { 
+	background: linear-gradient(to top right, BlueViolet, MediumSlateBlue, Orchid, HotPink) no-repeat;
+} 
+p {
+	margin: 20px;
+	font-family: Impact, Charcoal, sans-serif;
+}
+h1 {
+	font-family: Impact, Charcoal, sans-serif;
+}
+h2 {
+	font-family: Impact, Charcoal, sans-serif;
+}
+
